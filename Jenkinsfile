@@ -14,7 +14,6 @@ pipeline {
             }
         }
 
-
         stage('Parar container antigo') {
             steps {
                 sh 'docker stop api-flash || true && docker rm api-flash || true'
